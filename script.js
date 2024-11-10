@@ -56,7 +56,6 @@ function addToCart(product_id) {
   const product = cart.find(item => item.id === parseInt(product_id));
 
   if (product) {
-    // Add to cart (or increase quantity if item already exists in addedCart)
     const existingProduct = addedCart.find(item => item.id === product.id);
     if (existingProduct) {
       existingProduct.quantity++;
@@ -69,10 +68,10 @@ function addToCart(product_id) {
 }
 
 function updateCartUI() {
-  addedItem.innerHTML = "";  // Clear the cart display
+  addedItem.innerHTML = "";
 
   if (addedCart.length === 0) {
-    addedItem.innerHTML = "<p>Your cart is empty!</p>";
+    addedItem.innerHTML = "<p class='empty-item'>Your cart is empty!</p>";
   } else {
     addedCart.forEach(product => {
       const productDiv = document.createElement("div");

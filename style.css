@@ -130,6 +130,13 @@ header {
   border-radius: 30px;
 }
 
+.empty-item {
+  color: red;
+  font-size: 30px;
+  text-align: center;
+  line-height: 500px;
+}
+
 .quantity {
   display: flex;
   align-items: center;
