@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "productImage":"images/image1.webp",
+        "productName":"Within Hoodie",
+        "price":200
+    },
+    {
+        "id":2,
+        "productImage":"images/image2.webp",
+        "productName":"Check Corduroy Shirt",
+        "price":199
+    },
+    {
+        "id":3,
+        "productImage":"images/image3.webp",
+        "productName":"Casual Ripped Shacket",
+        "price":249
+    },
+    {
+        "id":4,
+        "productImage":"images/image4.webp",
+        "productName":"Regular Shirt",
+        "price":149
+    },
+    {
+        "id":5,
+        "productImage":"images/image5.webp",
+        "productName":"Chill White Cap",
+        "price":99
+    },
+    {
+        "id":6,
+        "productImage":"images/image6.webp",
+        "productName":"Black Cap",
+        "price":300
+    },
+    {
+        "id":7,
+        "productImage":"images/image7.webp",
+        "productName":"UM Core // peach",
+        "price":179
+    },
+    {
+        "id":8,
+        "productImage":"images/image8.webp",
+        "productName":"UM Core // Orchid Hush",
+        "price":139
+    }
+]

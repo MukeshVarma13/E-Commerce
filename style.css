@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -25,6 +24,9 @@ header {
   color: rgb(216, 216, 216);
   height: 2.6em;
   line-height: 2.6em;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  z-index: 12;
 }
 
 .main-container {
@@ -35,6 +37,7 @@ header {
   box-shadow: 0 2px 5px rgb(39, 39, 39);
   letter-spacing: -1px;
   background-color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .main-header {
@@ -85,6 +88,89 @@ header {
 .shopping {
   line-height: 20px;
   margin: 6px;
+}
+
+.shopping-container {
+  height: 100%;
+  background-color: white;
+  width: 460px;
+  position: fixed;
+  right: 0;
+  top: 2.6em;
+  z-index: 11;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.show-cart {
+  display: none;
+  width: 200%;
+}
+
+.shopping-container > .my-cart {
+  height: 60px;
+  background-color: #34381e;
+  text-align: center;
+  line-height: 60px;
+}
+
+.individual-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+  overflow: hidden;
+}
+
+.individual-products:nth-child(even) {
+  background-color: rgb(194, 189, 189);
+}
+
+.individual-products > img {
+  height: 100px;
+  border-radius: 30px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity > svg {
+  border-radius: 40%;
+  background-color: white;
+}
+
+.quantity > span {
+  padding: 0 10px;
+}
+
+.cancel-place {
+  position: fixed;
+  width: inherit;
+  display: flex;
+  bottom: 0;
+  height: 60px;
+  background-color: #34381e;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cancel-place > div {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  text-decoration: none;
+}
+
+.cancel-place > div > a {
+  text-decoration: none;
+  color: black;
+}
+
+.cancel {
+  background-color: wheat;
 }
 
 .floating-container {
@@ -142,6 +228,7 @@ header {
   margin: 30px 0 10px 70px;
   font-weight: 500;
   letter-spacing: -1px;
+  font-family: "Poppins", sans-serif;
 }
 
 .individual-images {
@@ -151,7 +238,11 @@ header {
   border: 1px solid black;
   background-color: white;
   text-align: center;
-  /* margin-bottom: 60px; */
+  box-shadow: 2px 2px 13px rgb(39, 39, 39);
+}
+
+.individual-images > h2 {
+  font-weight: 450;
 }
 
 .individual-images > img {
@@ -169,7 +260,7 @@ header {
 
 footer {
   margin-top: 70px;
-  height: 50vh;
+  height: 45vh;
   background-color: black;
   width: 100%;
   position: absolute;
@@ -188,16 +279,39 @@ footer {
   display: flex;
 }
 
-.references{
-    width: 25%;
+.references {
+  width: 25%;
 }
 
-.references>h3{
-    margin-bottom: 10px;
+.references > h3 {
+  margin-bottom: 10px;
 }
-.references>a{
-    display: block;
-    text-decoration: none;
-    color: white ;
-    opacity: 0.8;
+.references > a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+
+.references > div {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+.references > div > a {
+  text-decoration: none;
+}
+
+.references > div > a > svg {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3px;
+}
+
+.last-div {
+  background-color: white;
+  height: 1px;
+  opacity: 0.3;
 }
